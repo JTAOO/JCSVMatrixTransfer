@@ -8,3 +8,6 @@
 - 通过点击 `Jtools`-`J CSV Matrix Transfer`打开工具面板。
 - 正确填入数据，转换。
 
+![image](https://github.com/JTAOO/JCSVMatrixTransfer/blob/main/Pictures/t1.png)
+
+![image](https://github.com/JTAOO/JCSVMatrixTransfer/blob/main/Pictures/t2.png)
