@@ -34,7 +34,7 @@ public class JCSVMatrixTransferWindow : EditorWindow
     private void OnGUI()
     {
         GUILayout.Box(" J CSV Matrix Transfer", boxStyle, GUILayout.Height(60), GUILayout.ExpandWidth(true));
-        GUILayout.Box("Ê¹ÓÃÕâ¸ö¹¤¾ß£¬ ÀûÓÃÊÀ½ç¿Õ¼ä×ª»»¾ØÕó", richTextStyle_Mid, GUILayout.ExpandWidth(true));
+        GUILayout.Box("ä½¿ç”¨è¿™ä¸ªå·¥å…·ï¼Œ åˆ©ç”¨ä¸–ç•Œç©ºé—´è½¬æ¢çŸ©é˜µ", richTextStyle_Mid, GUILayout.ExpandWidth(true));
 
         GUILayout.Space(10);
         DrawALine(3);
@@ -54,7 +54,7 @@ public class JCSVMatrixTransferWindow : EditorWindow
         DrawALine(3);
         GUILayout.Space(10);
 
-        if(GUILayout.Button("×ª»»", GUILayout.Height(60)))
+        if(GUILayout.Button("è½¬æ¢", GUILayout.Height(60)))
         {
             Trans();
         }
@@ -82,7 +82,7 @@ public class JCSVMatrixTransferWindow : EditorWindow
 
         Vector3 newForward = matrix1.MultiplyVector(Vector3.forward);
         Vector3 newUp = matrix1.MultiplyVector(Vector3.up);
-        targetObject.rotation = Quaternion.LookRotation(newForward, newUp);
+        targetObject.localRotation = Quaternion.LookRotation(newForward, newUp);
         targetObject.localPosition = matrix1.MultiplyPoint(Vector3.zero);
         //Debug.Log(matrix1);
     }
