@@ -40,7 +40,7 @@ public class JCSVMatrixTransferWindow : EditorWindow
         DrawALine(3);
         GUILayout.Space(10);
         GUILayout.Label(" Inputs", headerStyle);
-        targetObject = EditorGUILayout.ObjectField("Target", targetObject, typeof(Transform), true) as Transform;
+        targetObject = EditorGUILayout.ObjectField("Target", targetObject, typeof(Transform), true, GUILayout.Height(30)) as Transform;
         worldMatrix_line0 = EditorGUILayout.TextField("worldMatrix_line0", worldMatrix_line0);
         worldMatrix_line1 = EditorGUILayout.TextField("worldMatrix_line1", worldMatrix_line1);
         worldMatrix_line2 = EditorGUILayout.TextField("worldMatrix_line2", worldMatrix_line2);
@@ -48,7 +48,7 @@ public class JCSVMatrixTransferWindow : EditorWindow
 
 
 
-        
+
 
         GUILayout.Space(10);
         DrawALine(3);
